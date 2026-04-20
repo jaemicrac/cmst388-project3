@@ -1,6 +1,6 @@
 /*
-		Your Name: <Enter Your Name>
-		Last Modified Date: <Enter The Date in mm/dd/yyyy format>
+		Your Name: Jae Mi Cracolici
+		Last Modified Date: 04/21/2026
 		File: event_registration.js
 		File Description: <Enter a brief paragraph to describe the purpose of this file>
 */
@@ -13,3 +13,13 @@ var costPerTicket = 5.00;
 var ticketSurcharge = 0.50;
 
 /*** YOUR CODE STARTS BELOW HERE ***/
+//Countdown timer
+var timeLimit = 10 * 60;
+var timerDisplay = document.getElementById("timer");
+
+var countdown = setInterval(function() {
+	var minutes = Math.floor(timeLimit / 60);
+	var seconds = timeLimit % 60;
+	if (seconds < 10) {
+		seconds = "0" +seconds;
+	}
