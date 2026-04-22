@@ -58,7 +58,7 @@ if (isNaN(numTickets) || numTickets < minTickets || numTickets > maxTickets || n
 	totalCostField.value = "$0.00";
 } else {
 	errorSpan.innerHTML = "";
-	numTicketsField.style.backgroundColor = "white"
+	numTicketsField.style.backgroundColor = "white";
 
 //Calculation for tickets * ticket price + surcharge
 var total = (parseInt(numTickets) * costPerTicket) + ticketSurcharge;
@@ -68,4 +68,5 @@ totalCostField.value = "$" + total.toFixed(2);
 
 //Reveal the contact section 
 contactSection.style.display = "block";
+}
 }
