@@ -63,7 +63,7 @@ if (isNaN(numTickets) || numTickets < minTickets || numTickets > maxTickets || n
 //Calculation for tickets * ticket price + surcharge
 var total = (parseInt(numTickets) * costPerTicket) + ticketSurcharge;
 
-//Format to fixed 2 decimal places with &
+//Format to fixed 2 decimal places with $
 totalCostField.value = "$" + total.toFixed(2); 
 
 //Reveal the contact section 
