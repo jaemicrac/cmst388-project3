@@ -13,6 +13,7 @@ var costPerTicket = 5.00;
 var ticketSurcharge = 0.50;
 
 /*** YOUR CODE STARTS BELOW HERE ***/
+
 //Countdown timer
 var timeRemaining = 600; //Sets time limit to 10 minutes (600 seconds)
 
@@ -33,7 +34,7 @@ var timerDisplay = document.getElementById("timer");
 //Checks if the time has run out 
 if (timeRemaining <= 0) {
 	clearInterval(countdownInterval); //Stops the timer 
-	alert("Sorry, your time to complete the form has expired! Please try again if you still wish to purchase tickets."); [cite: 6]
+	alert("Sorry, your time to complete the form has expired! Please try again if you still wish to purchase tickets."); 
 	location.href = "event_registration.html"; //To redirect back to the same page 
 }
 
