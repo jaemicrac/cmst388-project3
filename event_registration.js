@@ -13,30 +13,28 @@ var costPerTicket = 5.00;
 var ticketSurcharge = 0.50;
 
 /*** YOUR CODE STARTS BELOW HERE ***/
-//Countdown timer
-var timeLimit = 10 * 60;
-var timerDisplay = document.getElementById("timer");
+//Global variable for the countdown timer (10 minutes = 600 seconds)
+var timeRemaining = 600;
 
-var countdown = setInterval(function() {
-	var minutes = Math.floor(timeLimit / 60);
-	var seconds = timeLimit % 60;
+//To set interval to run every 1000 ms (1 second)
+var countdownInterval = setInterval(function() {
+	var minutes = Math.floor(timeRemaining / 60);
+	var seconds = timeRemaining % 60;
 
+	//Prepend a "0" if seconds are less than 10 
 	if (seconds < 10) {
-		seconds = "0" +seconds;
+		seconds = "0" + seconds;
 	}
 
-	// To update time remaining on the screen 
-	timerDisplay.innerHTML = minutes + ";" + seconds;
+	//Update the timer display on the webpage
+	document.getElementById("timer").innerHTML = minutes + ";" + seconds;
 
-	// For when the timer runs out 
-	if (timeLimit <= 0) {
-		clearInterval(countdown); 
+	//To check if the time has run out
+	if (timeRemaining <= 0) {
+		clearInterval (countdown Interval);
 		alert("Sorry, your time to complete the form has expired! Please try again if you still wish to purchase tickets."); [cite: 6]
-		location.href = "event_registration.html"; // To redirect back to same page
+		location.href = "event_registration.html"; //Redirects to restart
 	}
 
-		timeLimit--;
+	timeReminaing--; //Decreases time by 1 second
 }, 1000);
-	
-
-	
