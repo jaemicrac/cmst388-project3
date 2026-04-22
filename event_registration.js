@@ -2,7 +2,7 @@
 		Your Name: Jae Mi Cracolici
 		Last Modified Date: 04/21/2026
 		File: event_registration.js
-		File Description: <Enter a brief paragraph to describe the purpose of this file>
+		File Description: This JavaScript file acts as the functional engine for the event registration system, managing all interactive logic and DOM manipulation without requiring any modifications to the provided HTML or CSS files. Its primary purpose is to execute a ten-minute countdown timer that automatically redirects the user upon expiration, while simultaneously performing real-time cost calculations and validating that ticket quantities fall between the required range of one and three. The script provides essential user feedback by dynamically showing or hiding the contact information section and utilizing visual cues, such as background color changes and error messages, to ensure all required data is entered correctly before finalizing the purchase.
 */
 
 // Set the minimum and maximum number of tickets able to be purchased
