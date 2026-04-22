@@ -14,7 +14,7 @@ var ticketSurcharge = 0.50;
 
 /*** YOUR CODE STARTS BELOW HERE ***/
 //Countdown timer
-vartimeRemaining = 600; //Sets time limit to 10 minutes (600 seconds)
+var timeRemaining = 600; //Sets time limit to 10 minutes (600 seconds)
 
 var countdownInterval = setInterval(function() {
 	var minutes = Math.floor(timeRemaining / 60);
