@@ -42,20 +42,20 @@ timeRemaining--; //Decreases by 1 second at each interval
 }, 1000); 
 
 //To calculate total number of tickets 
-function calculationTotal() {
+function calculateTotal() {
 	var numTicketsField = document.getElementById("numTickets");
 	var numTickets = numTicketsField.value;
 	var errorSpan = document.getElementById("msgTickets");
 	var contactSection = document.getElementById("contactInformation");
-	var totalCostField = document.getElementById("totalCost);
+	var totalCostField = document.getElementById("totalCost");
 
 //Validates and checks if input is a number or outside of the 1-3 range
 if (isNaN(numTickets) || numTickets < minTickets || numTickets > maxTickets || numTickets === "") {
 	//Shows an error message and turns the field to yellow
-	error.Span.innerHTML = "You can only buy between 1 and 3 tickets."; 
+	errorSpan.innerHTML = "You can only buy between 1 and 3 tickets."; 
 	numTicketsField.style.backgroundColor = "yellow";
 	contactSection.style.display = "none"; //To keep contact information hidden
-	totalCostField.value = $0.00";
+	totalCostField.value = "$0.00";
 } else {
 	errorSpan.innerHTML = "";
 	numTicketsField.style.backgroundColor = "white"
