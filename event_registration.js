@@ -107,3 +107,4 @@ function completePurchase() {
 		var total = document.getElementById("totalCost").value;
 		alert("Thank you for your purchase! Your total cost is " + total);
 	}
+}
