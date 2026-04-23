@@ -105,5 +105,5 @@ function completePurchase() {
 	if (isValid) {
 		clearInterval(countdownInterval); //Stops timer 
 		var total = document.getElementById("totalCost").value;
-		alert("Thank you for your purchase! Your total cost is " + total)
+		alert("Thank you for your purchase! Your total cost is " + total);
 	}
