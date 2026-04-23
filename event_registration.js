@@ -83,7 +83,7 @@ function completePurchase() {
 	var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 	//Validate name is not blank
-	if (nameField.value.trim() === "" {
+	if (nameField.value.trim() === "") {
 		nameError.innerHTML = "Please enter your name.";
 		nameField.style.backgroundColor = "yellow";
 		isValid = false;
