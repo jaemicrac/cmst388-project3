@@ -70,3 +70,40 @@ totalCostField.value = "$" + total.toFixed(2);
 contactSection.style.display = "block";
 }
 }
+
+//Complete purchase function
+function completePurchase() {
+	var nameField = document.getElementById("name");
+	var emailField = document.getElementById("email");
+	var nameError = document.getElementById("msgname");
+	var emailError = document.getElementById("msgemail");
+	var isValid = true;
+
+	//Email Regex to match format xxx@yyy.domain
+	var emailPattern = /^[^\s@]+\.[^\s@]+$/;
+
+	//Validate name is not blank
+	if (nameField.value.trim() === "" {
+		nameError.innerHTML = "Please enter your name.";
+		nameField.style.backgroundColor = "yellow";
+		isValid = false;
+	} else {
+		nameError.innerHTML = "";
+		nameField.style.backgroundColor = "white";
+	}
+
+	//Validate email format 
+	if (!emailPattern.test(emailField.value)) {
+		emailError.innerHTML = "Please enter a valid email (xxx@yyy.domain).";
+		emailField.style.backgroundColor = "yellow";
+		isValid = false;
+	} else {
+		emailError.innerHTML = "";
+		emailField.style.backgroundColor = "white";
+	}
+
+	if (isValid) {
+		clearInterval(countdownInterval); //Stops timer 
+		var total = document.getElementById("totalCost").value;
+		alert("Thank you for your purchase! Your total cost is " + total)
+	}
