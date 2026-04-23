@@ -80,7 +80,7 @@ function completePurchase() {
 	var isValid = true;
 
 	//Email Regex to match format xxx@yyy.domain
-	var emailPattern = /^[^\s@]+\.[^\s@]+$/;
+	var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 	//Validate name is not blank
 	if (nameField.value.trim() === "" {
